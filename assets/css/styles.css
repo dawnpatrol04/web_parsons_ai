@@ -1,1 +1,52 @@
-/* Leave blank for now */
+/* Add this in your styles.css file */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* This should be your chosen font */
+    background: #000; /* Matching the dark theme of the logo */
+    color: #fff;
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000; /* Or another color that matches your site's theme */
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* This sets the space between your navigation items */
+  }
+  
+  .nav-item {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff; /* Or any color that suits your design and ensures readability */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-item:hover {
+    background-color: #333; /* A slight hover effect on the nav items */
+    border-radius: 5px;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the size of your logo as needed */
+  }
+  
+  /* Add responsive design styles as needed */
+  
