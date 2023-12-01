@@ -1,53 +1,35 @@
-/* Add this in your styles.css file */
+/* Header Styles */
 
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif; /* This should be your chosen font */
-    background: #000; /* Matching the dark theme of the logo */
-    color: #fff;
-  }
-  
-  .site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.85); /* Slightly transparent black background */
-  }
-  
-  .nav {
-    list-style-type: none;
-    display: flex;
-    gap: 20px; /* Adjust the space between navigation items */
-  }
-  
-  .nav-item {
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #fff; /* Or any color that suits your design and ensures readability */
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover,
-  .nav-item:hover {
-    background-color: #333; /* A slight hover effect on the nav items */
-    border-radius: 5px;
-  }
-  
-  .site-header .logo img {
-    height: auto; /* Maintain the aspect ratio of the logo */
-    width: 120px; /* Adjust based on your actual logo size */
-  }
-  
-  /* Add responsive design styles as needed */
-  
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #545557, #b0b3b8); /* Adjust the gradient colors to match */
+  /* Rest of your styles */
+  padding: 1rem 2rem; /* Adjust to match the spacing in the image */
+}
+
+.site-header .logo img {
+  height: auto;
+  width: 120px; /* Adjust the size to match the logo in the image */
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem; /* Adjust the gap to match the image */
+}
+
+.nav-item a {
+  color: #ccc; /* Adjust the color to match the text in the image */
+  text-decoration: none;
+  font-size: 0.85rem; /* Match the font size from the image */
+  text-transform: uppercase; /* If the text is uppercase in the image */
+  font-weight: 500; /* Adjust to match the font weight in the image */
+}
+
+.nav-item a:hover {
+  color: #fff; /* Adjust hover state color as needed */
+}
+
+/* Include media queries for responsiveness */
