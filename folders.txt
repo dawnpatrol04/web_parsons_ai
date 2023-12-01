@@ -1,0 +1,21 @@
+/your-project-name
+|-- /docs
+    |-- index.html
+    |-- /assets
+        |-- /css
+            |-- styles.css
+        |-- /js
+            |-- htmx.min.js
+            |-- script.js
+        |-- /images
+            |-- hero.jpg
+            |-- logo.png
+        |-- /fonts
+            |-- custom-font.woff
+|-- /components
+    |-- header.html
+    |-- footer.html
+|-- /services
+    |-- service1.html
+    |-- service2.html
+|-- README.md
