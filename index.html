@@ -33,5 +33,40 @@
     <!-- HTMX and Custom Script -->
     <script src="assets/js/htmx.min.js" defer></script>
     <script src="assets/js/script.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Load Header Component
+            fetch('components/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the header:', error));
+
+            // Load Hero Component
+            fetch('components/hero.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('hero-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the hero section:', error));
+
+            // Load Services Component
+            fetch('components/services.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('services-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the services section:', error));
+
+            // Load Footer Component
+            fetch('components/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the footer:', error));
+        });
+    </script>
 </body>
 </html>
