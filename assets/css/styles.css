@@ -15,16 +15,16 @@
   
   .site-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 2rem;
-    background: #000; /* Or another color that matches your site's theme */
+    background: rgba(0, 0, 0, 0.85); /* Slightly transparent black background */
   }
   
   .nav {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    gap: 1rem; /* This sets the space between your navigation items */
+    gap: 20px; /* Adjust the space between navigation items */
   }
   
   .nav-item {
@@ -44,8 +44,9 @@
     border-radius: 5px;
   }
   
-  .logo img {
-    height: 50px; /* Adjust the size of your logo as needed */
+  .site-header .logo img {
+    height: auto; /* Maintain the aspect ratio of the logo */
+    width: 120px; /* Adjust based on your actual logo size */
   }
   
   /* Add responsive design styles as needed */
