@@ -6,18 +6,19 @@
   align-items: center;
   background: url('/assets/images/header_bg.png') no-repeat center center; /* Using the image as the background */
   background-size: cover; /* Ensure the background covers the entire header */
-  padding: 1rem 2rem; /* Adjust to match the spacing in the image */
+  padding: 0.25rem 0.5rem; /* Reduced padding to make the header 1/4th the size */
 }
 
 .site-header .logo img {
   height: auto;
-  width: 120px; /* Adjust the size to match the logo in the image */
+  width: 30px; /* Adjust the size to make the logo 1/4th the size */
 }
 
 .nav {
   list-style-type: none;
   display: flex;
-  gap: 2rem; /* Adjust the gap to match the image */
+  gap: 0.5rem; /* Adjust the gap to make the header 1/4th the size */
+  margin-left: auto; /* Push the navigation to the right side */
 }
 
 .nav-item a {
