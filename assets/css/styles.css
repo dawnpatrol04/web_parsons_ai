@@ -1,41 +1,72 @@
-/* Header Styles */
+/* Since you're using Bootstrap, you may not need custom CSS for the navbar layout. 
+But you can still add custom styles if necessary, for instance: */
 
-.site-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  background: url('/assets/images/header_bg.png') no-repeat center center; /* Using the image as the background */
-  background-size: cover; /* Ensure the background covers the entire header */
-  padding: 0.25rem 0.5rem; /* Keep the reduced padding */
-}
-
-.site-header .logo {
-  padding-left: 1rem; /* Add padding to the left of the logo */
-}
-
-.site-header .logo img {
+/* Custom Navbar Brand Logo */
+.navbar-brand img {
   height: auto;
-  width: auto; /* Adjust if needed */
+  width: 50px; /* Adjust the size as needed */
 }
 
-.nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end; /* Align the links to the right */
-  gap: 0.5rem; /* Keep the adjusted gap */
-  padding-right: 1rem; /* Add padding to the right of the links */
+/* Custom Navbar Link Styles */
+.nav-link {
+  color: #ccc !important; /* Override Bootstrap's default color */
 }
 
-.nav-item a {
-  color: #ccc; /* Adjust the color to match the text in the image */
-  text-decoration: none;
-  font-size: 0.85rem; /* Match the font size from the image */
-  text-transform: uppercase; /* If the text is uppercase in the image */
-  font-weight: 500; /* Adjust to match the font weight in the image */
+.nav-link:hover {
+  color: #fff !important; /* Hover state */
 }
 
-.nav-item a:hover {
-  color: #fff; /* Adjust hover state color as needed */
+/* Background Image for Navbar */
+.navbar {
+  background: url('assets/images/header_bg.png') no-repeat center center;
+  background-size: cover;
 }
 
-/* Include media queries for responsiveness */
+/* Additional styles and media queries as needed */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #455A64;
+    height: 100 !important;
+}
+
+
+.container-fluid{
+    overflow:hidden; 
+    margin-top: 250px ;
+    background:#262626 ;
+    color: #627482  !important;
+    margin-bottom: 0 ;
+    padding-bottom:0  ;
+}
+
+small{
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.bold-text{
+    color: #989c9e !important;
+}
+
+
+.mt-55{
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+h3{
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+ 
+.social{
+    font-size: 21px !important; 
+}
+
+.rights{
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
