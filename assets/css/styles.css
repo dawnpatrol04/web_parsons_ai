@@ -1,24 +1,29 @@
 /* Header Styles */
 
 .site-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   background: url('/assets/images/header_bg.png') no-repeat center center; /* Using the image as the background */
   background-size: cover; /* Ensure the background covers the entire header */
-  padding: 0.25rem 0.5rem; /* Reduced padding to make the header 1/4th the size */
+  padding: 0.25rem 0.5rem; /* Keep the reduced padding */
+}
+
+.site-header .logo {
+  padding-left: 1rem; /* Add padding to the left of the logo */
 }
 
 .site-header .logo img {
   height: auto;
-  width: 30px; /* Adjust the size to make the logo 1/4th the size */
+  width: auto; /* Adjust if needed */
 }
 
 .nav {
   list-style-type: none;
   display: flex;
-  gap: 0.5rem; /* Adjust the gap to make the header 1/4th the size */
-  margin-left: auto; /* Push the navigation to the right side */
+  justify-content: flex-end; /* Align the links to the right */
+  gap: 0.5rem; /* Keep the adjusted gap */
+  padding-right: 1rem; /* Add padding to the right of the links */
 }
 
 .nav-item a {
