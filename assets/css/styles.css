@@ -1,112 +1,101 @@
-/* Since you're using Bootstrap, you may not need custom CSS for the navbar layout. 
-But you can still add custom styles if necessary, for instance: */
-
-/* Custom Navbar Brand Logo */
-.navbar-brand img {
-  height: auto;
-  width: 50px; /* Adjust the size as needed */
-}
-
-/* Custom Navbar Link Styles */
-.nav-link {
-  color: #ccc !important; /* Override Bootstrap's default color */
-}
-
-.nav-link:hover {
-  color: #fff !important; /* Hover state */
-}
-
- 
-/* Additional styles and media queries as needed */
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
 body {
-    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
     font-family: 'Rubik', sans-serif;
-    background: #455A64;
-    height: 100 !important;
+    background: #f8f9fa;
 }
 
-
-.container-fluid{
-    overflow:hidden; 
-    margin-top: 250px ;
-    background:#262626 ;
-    color: #627482  !important;
-    margin-bottom: 0 ;
-    padding-bottom:0  ;
+.container-fluid {
+    overflow: hidden; 
+    margin-top: 250px;
+    background: #343a40;
+    color: #f8f9fa;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-small{
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
-.bold-text{
-    color: #989c9e !important;
+.bold-text {
+    color: #e9ecef !important;
 }
 
-
-.mt-55{
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
-
-h3{
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
- 
-.social{
-    font-size: 21px !important; 
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
-.rights{
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+.social {
+    font-size: 21px !important;
 }
 
-
-
-
-
-
-
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+}
 
 .my-icon {
-  /* Replace with actual icon styles */
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: url('path-to-your-icon.png') no-repeat center center;
-  background-size: contain;
+    /* Replace with actual icon styles */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url('path-to-your-icon.png') no-repeat center center;
+    background-size: contain;
 }
 
-h2 {
-  color: #000; /* Replace with actual color */
-  margin-bottom: 0.5rem;
-}
-
-h5 {
-  color: #000; /* Replace with actual color */
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+h2, h5 {
+    color: #343a40; /* Darker text for better contrast */
 }
 
 p {
-  color: #666; /* Replace with actual color */
+    color: #6c757d; /* Adjusted for better readability */
 }
 
 .btn-primary {
-  background-color: #0056b3; /* Replace with actual button color */
-  border: none;
+    background-color: #007bff;
+    border: none;
 }
 
 .btn-outline-primary {
-  border-color: #0056b3; /* Replace with actual button color */
-  color: #0056b3; /* Replace with actual button color */
+    border-color: #007bff;
+    color: #007bff;
 }
 
 .btn-outline-primary:hover {
-  background-color: #0056b3; /* Replace with actual button hover color */
-  color: #fff;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Specific Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-section h1, .hero-section p {
+    color: #fff;
+}
+
+.services-section {
+    background: #ffffff;
+    color: #343a40;
+}
+
+.services-section h2, .services-section p {
+    color: #343a40;
+}
+
+.testimonials-section {
+    background: #f8f9fa;
+    color: #343a40;
+}
+
+.testimonials-section h2, .testimonials-section p {
+    color: #343a40;
 }
